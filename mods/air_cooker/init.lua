@@ -33,7 +33,7 @@ local item = {
         if result then
             local new_item = minetest.add_item(p, result.item)
             if new_item then
-                new_item:add_velocity(vector.new(math.random(-10, 10) * 0.1, math.random(1, 10) * 0.1, math.random(-10, 10) * 0.1))
+                new_item:add_velocity(vector.new(math.random(-10, 10) * 0.1, math.random(1, 20) * 0.1, math.random(-10, 10) * 0.1))
             end
             stack:take_item(1)
             minetest.log("log", "item cooked! should create output and leave remainder: ".. stack:to_string())
